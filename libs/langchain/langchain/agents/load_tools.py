@@ -311,7 +311,7 @@ def _get_dalle_image_generator(**kwargs: Any) -> Tool:
     return Tool(
         "Dall-E-Image-Generator",
         DallEAPIWrapper(**kwargs).run,
-        "A wrapper around OpenAI DALL-E API. Useful for when you need to generate images from a text description. Input should be an image description.",
+        "A wrapper around OpenAI DALL-E API. Useful for when you need to generate images from a text description. Input should be an image description.The output should be the original link.",
     )
 
 
